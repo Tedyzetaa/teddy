@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio do Teddy</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Cores e variáveis */
+    :root {
+      --cor-fundo: #000;
+      --cor-primaria: #f00;
+      --cor-secundaria: #111;
+      --cor-texto: #fff;
+      --sombra-card: rgba(240, 0, 0, 0.4);
+      --radius: 8px;
+    }
+
+    /* Reset básico */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--cor-fundo); color: var(--cor-texto); font-family: 'Roboto', sans-serif; }
+    a { color: var(--cor-primaria); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout geral */
+    header { text-align: center; padding: 3rem 1rem; }
+    header h1 { font-size: 3.5rem; color: var(--cor-primaria); text-shadow: 2px 2px var(--cor-secundaria); letter-spacing: 2px; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; font-weight: 300; }
+
+    main { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+
+    .project {
+      background: var(--cor-secundaria);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px var(--sombra-card);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px var(--sombra-card);
+    }
+
+    .project h2 { color: var(--cor-primaria); font-size: 1.6rem; margin-bottom: 0.8rem; }
+    .project p { flex-grow: 1; margin-bottom: 1.2rem; line-height: 1.4; }
+    .project a.link-placeholder {
+      align-self: flex-start;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid var(--cor-primaria);
+      border-radius: var(--radius);
+      font-weight: 500;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .project a.link-placeholder:hover {
+      background: var(--cor-primaria);
+      color: var(--cor-fundo);
+    }
+
+    /* Rodapé */
+    footer { text-align: center; padding: 1rem; font-size: 0.9rem; color: #777; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio do Teddy</h1>
+    <p>Principais projetos desenvolvidos por mim</p>
+  </header>
+
+  <main>
+    <section class="projects-grid">
+      <article class="project">
+        <h2>Site de Horários de Ônibus Simples</h2>
+        <p>Um site estático que exibe horários de linhas de ônibus de forma clara e responsiva, desenvolvido em HTML, CSS e JavaScript puros.</p>
+        <a class="link-placeholder" href="#">Inserir link</a>
+      </article>
+
+      <article class="project">
+        <h2>Número Secreto</h2>
+        <p>Jogo de adivinhação em que o usuário tenta descobrir um número aleatório gerado pelo programa, com feedback de maior/menor.</p>
+        <a class="link-placeholder" href="#">Inserir link</a>
+      </article>
+
+      <article class="project">
+        <h2>Sistema de Rede Neural</h2>
+        <p>Implementação didática de uma rede neural perceptron, treinada via backpropagation para resolver problemas simples.</p>
+        <a class="link-placeholder" href="#">Inserir link</a>
+      </article>
+
+      <article class="project">
+        <h2>Chatbot Gemini 1.5</h2>
+        <p>Chatbot integrado com o modelo Gemini 1.5, capaz de responder perguntas e manter conversas em linguagem natural.</p>
+        <a class="link-placeholder" href="#">Inserir link</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Portfólio do Teddy
+  </footer>
+</body>
+</html>
