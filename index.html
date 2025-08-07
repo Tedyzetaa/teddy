@@ -61,6 +61,32 @@
       color: var(--cor-fundo);
     }
 
+    /* Nova seção de contato */
+    .contact-section {
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .contact-button {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--cor-texto);
+        background-color: var(--cor-primaria);
+        border: 2px solid var(--cor-primaria);
+        border-radius: var(--radius);
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    .contact-button:hover {
+        background-color: transparent;
+        color: var(--cor-primaria);
+    }
+    .contact-email-link {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+    }
+
     /* Rodapé */
     footer { text-align: center; padding: 1rem; font-size: 0.9rem; color: #777; }
   </style>
@@ -96,6 +122,12 @@
         <p>Exemplo de site de e-commerce com catálogo de produtos, carrinho de compras e checkout funcional.</p>
         <a class="link-placeholder" href="https://sitevendasexemplo.vercel.app/" target="_blank">Visitar</a>
       </article>
+    </section>
+
+    <!-- Adicionado a seção de contato com o botão e o email -->
+    <section class="contact-section">
+      <a class="contact-button" href="mailto:teddysrequest@gmail.com?subject=Contato+do+Portf%C3%B3lio" target="_blank">Entrar em Contato</a>
+      <a class="contact-email-link" href="mailto:teddysrequest@gmail.com">teddysrequest@gmail.com</a>
     </section>
   </main>
 
